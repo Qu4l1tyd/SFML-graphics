@@ -1,5 +1,8 @@
 # SFML graphics
 
+This is a really simple pong demo of using SFML library
+to draw graphics with C++.
+
 1. Open terminal in the directory that you have downloaded this
 
 2. Install SFML
