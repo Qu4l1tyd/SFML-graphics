@@ -19,13 +19,12 @@ void drawhelp::drawRect(sf::RenderWindow& Window, int x, int y, int width, int h
 }
 
 void drawhelp::line(sf::RenderWindow& Window, int x1, int y1, int x2, int y2) {
- sf::Vertex line[] =
-{
-    sf::Vertex(sf::Vector2f(x1, y1)),
-    sf::Vertex(sf::Vector2f(x2, y2))
-};
+	sf::Vertex line[] = {
+		sf::Vertex(sf::Vector2f(x1, y1)),
+		sf::Vertex(sf::Vector2f(x2, y2))
+	};
 
-Window.draw(line, 2, sf::Lines);
+	Window.draw(line, 2, sf::Lines);
 
 }
 
