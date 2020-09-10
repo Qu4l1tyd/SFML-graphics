@@ -4,11 +4,13 @@
 #include <SFML/Graphics.hpp>
 #include "drawhelp.h"
 
-extern drawhelp pdhelp;
+//extern drawhelp pdhelp;
 
 class pong{
 
 public:
+	drawhelp pdhelp;
+
 	pong();
 	pong(int getWidth, int getHeigth);
 
@@ -27,7 +29,7 @@ private:
 
 	int leftPaddleY = 150;
 	int rightPaddleY = 150;
-	float paddleSpeed = 0.2;
+	float paddleSpeed = 0.3;
 	float ballSpeed = 0.3;
 
 	float getElapsedTime = 1;
