@@ -14,22 +14,13 @@ int main() {
 	sf::RenderWindow window(sf::VideoMode(512,512), "C++ works!", sf::Style::Close	|	sf::Style::Titlebar);
 
 	/* Set framerate limit */
-	window.setFramerateLimit(60);
+	window.setFramerateLimit(120);
 
-	sf::Texture texture;
 	sf::Sprite sprite;
-	
-	/* If there is error with loading the texture */
-	if(!texture.loadFromFile("image.jpg")) {
-		std::cout<<"File error!\n";
-		return 0;
-	}
 
-	sprite.setTexture(texture);
 	sprite.setPosition(sf::Vector2f(10,50)); //move to 10,50
 
 	/* Initalization done, move to game loop */
-
 	sf::Clock clock;
 	while(window.isOpen()) {
 		sf::Time elapsed = clock.restart();
