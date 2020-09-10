@@ -14,33 +14,33 @@ pong::pong(int getWidth, int getHeigth) {
 
 void pong::run(sf::RenderWindow& Window)  {
 
-elapsed = clock.restart();
+  elapsed = clock.restart();
 
-Window.clear(); //clear window
+  Window.clear(); //clear window
 
-input();
+  input();
 
-//draw left paddle
-pdhelp.fill(255,255,255,255);
-pdhelp.drawRect(Window,10,leftPaddleY,20,100);
+  //draw left paddle
+  pdhelp.fill(255,255,255,255);
+  pdhelp.drawRect(Window,10,leftPaddleY,20,100);
 
-//draw right paddle
-pdhelp.fill(255,255,255,255);
-pdhelp.drawRect(Window,512-10,rightPaddleY,20,100);
+  //draw right paddle
+  pdhelp.fill(255,255,255,255);
+  pdhelp.drawRect(Window,512-10,rightPaddleY,20,100);
 
-pdhelp.drawRect(Window,ballX,ballY,20,20);
+  pdhelp.drawRect(Window,ballX,ballY,20,20);
 
-Window.display(); //push the buffer to the window
+  Window.display(); //push the buffer to the window
 
-logic(); //DO LOGIC HERE
+  logic(); //DO LOGIC HERE
 
-/* If game is over */
-while(gameOver) {
-	sf::sleep(sf::milliseconds(500));	
-	gameOver = false;
-	//Reset variables
-	resetGame();
-}
+  /* If game is over */
+  while(gameOver) {
+    sf::sleep(sf::milliseconds(500));	
+    gameOver = false;
+    //Reset variables
+    resetGame();
+  }
 
 }
 
