@@ -1,6 +1,6 @@
 # SFML graphics
 
-This is a really simple pong demo of using SFML library
+This is a really simple pong demo using SFML library
 to draw graphics with C++.
 
 1. Open terminal in the directory that you have downloaded this
